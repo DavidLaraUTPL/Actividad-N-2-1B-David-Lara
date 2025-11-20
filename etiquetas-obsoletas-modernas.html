@@ -28,7 +28,8 @@
     <p>Actualmente, HTML5 ha impulsado una web más semántica y accesible. Por este motivo, en esta nueva versión se ha
         eliminado la dependencia de etiquetas anticuadas que mezclaban la estructura con la presentación y se han
         introducido nuevas etiquetas como header, nav, section, entre algunas otras.</p>
-        <p>Con el fin de comprender mejor las diferencias entre etiquetas obsoletas y etiquetas modernas, se ha realizado una tabla comparativa entre varias etiquetas.</p>
+    <p>Con el fin de comprender mejor las diferencias entre etiquetas obsoletas y etiquetas modernas, se ha realizado
+        una tabla comparativa entre varias etiquetas.</p>
     <section>
         <h2>HTML: etiquetas obsoletas vs etiquetas modernas</h2>
         <p></p>
@@ -36,20 +37,36 @@
         <table border="1">
             <tr>
                 <th>Etiqueta obsoleta</th>
+                <th>Función etiqueta obsoleta</th>
                 <th>Reemplazo moderno</th>
+                <th>Razón del reemplazo</th>
             </tr>
             <tr>
-                <td>&lt;font&gt;</td>
-                <td>CSS (color, tamaño, etc.)</td>
+                <td>&lt;acronym&gt;</td>
+                <td>Esta etiqueta solía indicar un acrónimo.</td>
+                <td>&lt;abbr&gt;</td>
+                <td>Se consolidó en la etiqueta más general y aceptada para abreviaturas.</td>
+            </tr>
+            <tr>
+                <td>&lt;dir&gt;</td>
+                <td>Se encargaba de definir una lista de directorios.</td>
+                <td>&lt;ult&gt;</td>
+                <td>Era redundante y la funcionalidad de lista no ordenada es más apropiada.</td>
             </tr>
             <tr>
                 <td>&lt;center&gt;</td>
-                <td>CSS (text-align)</td>
+                <td>Alineaba contenido horizontalmente al centro.</td>
+                <td>&lt;div&gt;</td>
+                <td>Esta etiqueta solía ser unicamente para la presentación. Ahora la alineación es más una tarea de
+                    CSS.</td>
             </tr>
             <tr>
-                <td>&lt;big&gt;</td>
-                <td>CSS (font-size)</td>
+                <td>&lt;frame&gt; y &lt;frameset&gt;</td>
+                <td>Dividia la página en marcos</td>
+                <td>&lt;iframe&gt;</td>
+                <td>Estas etiquetas tenían problemas de accesibilidad y usabilidad</td>
             </tr>
+
         </table>
     </section>
 </body>
