@@ -4,61 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a2d9d5c6d4.js" crossorigin="anonymous"></script>
     <title>Evolución del HTML: de HTML 1.0 a HTML5</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
-    <header>
-        <h1>Evolución del HTML: de HTML 1.0 a HTML5</h1>
+    <header class="encabezado">
+        <div class="contenedor adentro-de-la-cabecera">
+            <i class="fa-brands fa-html5"></i>
+            <h1 class="titulo-pagina">Evolución del HTML: de HTML 1.0 a HTML5</h1>
+            <div class="row">
+                <nav class="navegacion-principal" aria-label="Menú principal">
+                    <a href="index.html">Introducción</a>
+                    <a href="evolucion-html.html">Evolución</a>
+                    <a href="etiquetas-obsoletas-modernas.html">Etiquetas</a>
+                    <a href="ventajas-HTML5.html">Ventajas</a>
+                    <a href="Ejemplos-uso-actual-HTML5.html">Uso actual</a>
+                </nav>
+            </div>
+        </div>
     </header>
-    <nav>
-        <p>
-            <a href="index.html" target="_blank">Introducción</a> |
-            <a href="evolucion-html.html" target="_blank">Evolución de HTML</a> |
-            <a href="etiquetas-obsoletas-modernas.html" target="_blank">HTML: etiquetas obsoletas vs etiquetas
-                modernas</a> |
-            <a href="ventajas-HTML5.html" target="_blank">HTML5: las ventajas de lo nuevo</a> |
-            <a href="Ejemplos-uso-actual-HTML5.html" target="_blank">HTML5: Uso actual</a> |
-        </p>
-    </nav>
-    <section>
-        <h2>Formulario de suscripción al blog</h2>
+    <main class="contenedor">
+        <h2>HTML: la revolución web</h2>
+        <p>HTML (HyperText Markup Language) o Lenguaje de Marcado de Hipertexto es el fundamento sobre el que se
+            construye cualquier página web. Este lenguaje estándar se utiliza para estructurar el contenido de
+            manera
+            organizada, permitiendo que los usuarios accedan a la información de forma sencilla y eficiente.</p>
+        <p>A diferencia de un documento tradicional, donde la lectura sigue un orden lineal, el hipertexto permite
+            que
+            el usuario navegue entre distintos contenidos de manera no secuencial, siguiendo rutas personalizadas
+            según
+            el interés del usuario.</p>
+        <figure>
+            <img src="img/maquetacion-email-html.png" alt="Introducción a HTML" width="500">
+        </figure>
+        <p>Cuando surgió HTML de manera oficial en 1991 por Tim Berners-Lee, fue realmente revolucionario al
+            permitir
+            estructurar
+            información en la web haciendo posible romper las barreras para el intercambio de información científica
+            y
+            permitió sentar las bases para la World Wide Web que conocemos hoy. Su primera versión en 1991 era un
+            lenguaje sencillo con solo 18 etiquetas como html, head, body, h1 a h6, p, br, hr, entre otras. Sin
+            embargo,
+            ha evolucionado para adaptarse mejor a las nuevas tecnologías
+            y, sobre todo, a las necesidades crecientes de los nuevos usuario de la web. </p>
+        <figure>
+            <img src="img/creacion-html.jpg" alt="Creación de HTML">
+        </figure>
+        <p>A través de los años, se han ido creado nuevas y mejoradas versiones con el fin de facilitar esta
+            adaptación
+            con la creación de
+            páginas web de maneras más complejas y eficientes implementando nuevas etiquetas y funcionalidades que
+            mejoran la presentación y la interactividad de las páginas web creadas. La última de estas versiones
+            siendo
+            HTML5. </p>
+        <figure>
+            <img src="img/html5-1.png" alt="Logo de HTML5">
+        </figure>
+        <p>Para reforzar y complementar lo aprendido hasta el momento, lo invito a ver el siguiente video: </p>
+        <video src="video/Qué_es_HTML_bien_explicado.mp4" controls width="100%" style="max-width:700px"></video>
 
-        <form>
-            <label>Nombre:</label><br>
-            <input type="text"><br><br>
+        <aside class="card">
+            <h3>Formulario de suscripción</h3>
+            <form aria-label="Formulario de suscripción">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text" placeholder="Tu nombre">
 
-            <label>Correo:</label><br>
-            <input type="email"><br><br>
 
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-    <h2>HTML: la revolución web</h2>
-    <p>HTML (HyperText Markup Language) o Lenguaje de Marcado de Hipertexto es el fundamento sobre el que se
-        construye cualquier página web. Este lenguaje estándar se utiliza para estructurar el contenido de manera
-        organizada, permitiendo que los usuarios accedan a la información de forma sencilla y eficiente.</p>
-    <p>A diferencia de un documento tradicional, donde la lectura sigue un orden lineal, el hipertexto permite que
-        el usuario navegue entre distintos contenidos de manera no secuencial, siguiendo rutas personalizadas según
-        el interés del usuario.</p>
-    <img src="img/maquetacion-email-html.png" alt="Introducción a HTML" width="500">
-    <p>Cuando surgió HTML de manera oficial en 1991 por Tim Berners-Lee, fue realmente revolucionario al permitir
-        estructurar
-        información en la web haciendo posible romper las barreras para el intercambio de información científica y
-        permitió sentar las bases para la World Wide Web que conocemos hoy. Su primera versión en 1991 era un
-        lenguaje sencillo con solo 18 etiquetas como html, head, body, h1 a h6, p, br, hr, entre otras. Sin embargo,
-        ha evolucionado para adaptarse mejor a las nuevas tecnologías
-        y, sobre todo, a las necesidades crecientes de los nuevos usuario de la web. </p>
-    <img src="img/creacion-html.jpg" alt="Creación de HTML">
-    <p>A través de los años, se han ido creado nuevas y mejoradas versiones con el fin de facilitar esta adaptación
-        con la creación de
-        páginas web de maneras más complejas y eficientes implementando nuevas etiquetas y funcionalidades que
-        mejoran la presentación y la interactividad de las páginas web creadas. La última de estas versiones siendo
-        HTML5. </p>
-    <img src="img/html5-1.png" alt="Logo de HTML5">
-    <p>Para reforzar y complementar lo aprendido hasta el momento, lo invito a ver el siguiente video: </p>
-    <video src="video/Qué_es_HTML_bien_explicado.mp4" controls width="700"></video>
-    <footer>
+                <label for="email">Correo</label>
+                <input id="email" name="email" type="email" placeholder="tu@ejemplo.com">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </aside>
+    </main>
+    <footer class="footer">
         <p>© 2025 - UTPL</p>
     </footer>
 </body>
