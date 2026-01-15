@@ -5,74 +5,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evolución del HTML: de HTML 1.0 a HTML5</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icons/bootstrap-icons.css">
 </head>
 
 <body>
-    <header>
-        <h1>Evolución del HTML: de HTML 1.0 a HTML5</h1>
-    </header>
-    <nav>
-        <p>
-            <a href="index.html" target="_blank">Introducción</a> |
-            <a href="evolucion-html.html" target="_blank">Evolución de HTML</a> |
-            <a href="etiquetas-obsoletas-modernas.html" target="_blank">HTML: etiquetas obsoletas vs etiquetas
-                modernas</a> |
-            <a href="ventajas-HTML5.html" target="_blank">HTML5: las ventajas de lo nuevo</a> |
-            <a href="Ejemplos-uso-actual-HTML5.html" target="_blank">HTML5: Uso actual</a> |
-        </p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Evolución del HTML: de HTML 1.0 a HTML5</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Introducción</a></li>
+                    <li class="nav-item"><a class="nav-link" href="evolucion-html.html">Evolución</a></li>
+                    <li class="nav-item"><a class="nav-link" href="etiquetas-obsoletas-modernas.html">Etiquetas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ventajas-HTML5.html">Ventajas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Ejemplos-uso-actual-HTML5.html">Uso actual</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <section>
-        <h2>Formulario de suscripción al blog</h2>
+    <div class="container mt-4">
+        <div class="alert alert-primary text-center">
+            <h1 class="mb-0">Uso actual de HTML5</h1>
+        </div>
+        <article>
+            <h2>HTML5: los usos del estándar de desarrollo web actual</h2>
+            <p>HTML5 es, sin lugar a duda, la columna vertebral de casi toda experiencia digital en la web. Esto debido
+                a
+                que es una plataforma coherente y compatible con todos los dispositivos modernos, desde ordenadores de
+                escritorio hasta smartphones y dispositivos inteligentes como relojes inteligentes.</p>
+            <p> Debido a su importancia, HTML5 tiene muchos usos actualmente como: </p>
+            <div class="row g-3">
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="img/HTML_Diseño_Responsivo.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Diseño responsivo</p>
+                        </div>
+                    </div>
+                </div>
 
-        <form>
-            <label>Nombre:</label><br>
-            <input type="text"><br><br>
-
-            <label>Correo:</label><br>
-            <input type="email"><br><br>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-    <article>
-        <h2>HTML5: los usos del estándar de desarrollo web actual</h2>
-        <p>HTML5 es, sin lugar a duda, la columna vertebral de casi toda experiencia digital en la web. Esto debido a
-            que es una plataforma coherente y compatible con todos los dispositivos modernos, desde ordenadores de
-            escritorio hasta smartphones y dispositivos inteligentes como relojes inteligentes.</p>
-        <p> Debido a su importancia, HTML5 tiene muchos usos actualmente como: </p>
-        <ul>
-            <li>Páginas web responsivas</li>
-        </ul>
-        <img src="img/HTML_Diseño_Responsivo.jpg" alt="Páginas web responsivas con HTML5" width="200">
-        <ul>
-            <li>Aplicaciones web</li>
-        </ul>
-        <img src="img/html-progressive-web-apps.jpg" alt="Aplicaciones web con HTML5" width="200">
-        <ul>
-            <li>Juegos</li>
-        </ul>
-        <img src="img/HTML5-Game-Support-and-Maintenance.png" alt="Creación de videojuegos en HTML5" width="200">
-        <ul>
-            <li>Aplicaciones móviles</li>
-        </ul>
-        <img src="img/Developing-Apps-in-HTML-5.jpg" alt="Aplicaciones móviles en HTML5" width="200">
-        <ul>
-            <li>Creación de animaciones</li>
-        </ul>
-        <img src="img/html5-animation-tool-2.png" alt="Animaciones en HTML5" width="200">
-        <ul>
-            <li>Formularios avanzados</li>
-        </ul>
-        <img src="img/validacion-form-html5.jpg" alt="Fomularios en HTML5" width="250">
-        <p>En retrospectiva, los ejemplos del uso actual de HTML5 demuestran que ha trascendido su función original de
-            simple lenguaje de marcado. Hoy, HTML5 es la plataforma de desarrollo unificada que impulsa la inmensa
-            mayoría de las experiencias en línea y que ha sentado las bases para el futuro de la interactividad digital.
-        </p>
-
-    </article>
-    <footer>
-        <p>© 2025 - UTPL</p>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="img/html-progressive-web-apps.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Aplicaciones web</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="img/HTML5-Game-Support-and-Maintenance.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Juegos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="img/Developing-Apps-in-HTML-5.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Aplicaciones móviles</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="img/html5-animation-tool-2.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Creación de animaciones</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="img/validacion-form-html5.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Formularios avanzados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p></p>
+            <p>En retrospectiva, los ejemplos del uso actual de HTML5 demuestran que ha trascendido su función original
+                de
+                simple lenguaje de marcado. Hoy, HTML5 es la plataforma de desarrollo unificada que impulsa la inmensa
+                mayoría de las experiencias en línea y que ha sentado las bases para el futuro de la interactividad
+                digital.
+            </p>
+        </article>
+    </div>
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        © 2025 - UTPL
     </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

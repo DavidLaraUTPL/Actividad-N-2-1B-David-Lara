@@ -5,88 +5,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evolución del HTML: de HTML 1.0 a HTML5</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icons/bootstrap-icons.css">
 </head>
 
 <body>
-    <header>
-        <h1>Evolución del HTML: de HTML 1.0 a HTML5</h1>
-    </header>
-    <nav>
-        <p>
-            <a href="index.html" target="_blank">Introducción</a> |
-            <a href="evolucion-html.html" target="_blank">Evolución de HTML</a> |
-            <a href="etiquetas-obsoletas-modernas.html" target="_blank">HTML: etiquetas obsoletas vs etiquetas
-                modernas</a> |
-            <a href="ventajas-HTML5.html" target="_blank">HTML5: las ventajas de lo nuevo</a> |
-            <a href="Ejemplos-uso-actual-HTML5.html" target="_blank">HTML5: Uso actual</a> |
-        </p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Evolución del HTML: de HTML 1.0 a HTML5</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Introducción</a></li>
+                    <li class="nav-item"><a class="nav-link" href="evolucion-html.html">Evolución</a></li>
+                    <li class="nav-item"><a class="nav-link" href="etiquetas-obsoletas-modernas.html">Etiquetas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ventajas-HTML5.html">Ventajas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Ejemplos-uso-actual-HTML5.html">Uso actual</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <section>
-        <h2>Formulario de suscripción al blog</h2>
+    <div class="container mt-4">
+        <div class="alert alert-primary text-center">
+            <h1 class="mb-0">Ventajas de HTML5</h1>
+        </div>
+        <main>
+            <article>
+                <h2>HTML5: HTML mejor que nunca</h2>
+                <p>HTML5 cambió la forma en la que se venía trabajando con HTML desde 1991 con su primer versión. Las
+                    versiones
+                    anteriores de HTML permitían crear unicamente webs estáticas y dependientes de plugins pero todo
+                    esto
+                    cambió
+                    con la llegada de HTML5, lo cual hizo que HTML pasara a ser una plataforma completa para el
+                    desarrollo
+                    de
+                    aplicaciones con la capacidad de crear un ecosistema dinámico, accesible y multiplataforma.</p>
+                <p>Algunas de las ventajas con las que cuenta HTML5 con respecto a versiones anteriores son:</p>
 
-        <form>
-            <label>Nombre:</label><br>
-            <input type="text"><br><br>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="img/html5-estructura-semantica.webp" class="card-img-top">
+                            <div class="card-body">
+                                <h5>Semántica</h5>
+                                <p>Las etiquetas de HTML5 se enfocan en darle significado al contenido,
+                                    no solo en darle formato gracias a etiquetas especializadas en esto como header,
+                                    nav, section,
+                                    article, aside, entre otras. Esto permite entender mejor la estructura y jerarquía
+                                    de la página.</p>
+                            </div>
+                        </div>
+                    </div>
 
-            <label>Correo:</label><br>
-            <input type="email"><br><br>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-    <main>
-        <article>
-            <h2>HTML5: HTML mejor que nunca</h2>
-            <p>HTML5 cambió la forma en la que se venía trabajando con HTML desde 1991 con su primer versión. Las
-                versiones
-                anteriores de HTML permitían crear unicamente webs estáticas y dependientes de plugins pero todo esto
-                cambió
-                con la llegada de HTML5, lo cual hizo que HTML pasara a ser una plataforma completa para el desarrollo
-                de
-                aplicaciones con la capacidad de crear un ecosistema dinámico, accesible y multiplataforma.</p>
-            <p>Algunas de las ventajas con las que cuenta HTML5 con respecto a versiones anteriores son:</p>
-            <h3>Ventajas de HTML5</h3>
-            <ul>
-                <li>Mejor Semántica y Estructura: Las etiquetas de HTML5 se enfocan en darle significado al contenido,
-                    no solo en darle formato gracias a etiquetas especializadas en esto como header, nav, section,
-                    article, aside, entre otras. Esto permite entender mejor la estructura y jerarquía de la página.
-                </li>
-            </ul>
-            <img src="img/html5-estructura-semantica.webp" alt="Estructura semántica con HTML5" width="300">
-            <ul>
-                <li>Multimedia nativo: En versiones anteriores de HTML, el uso de plugins de terceros para la
-                    implementación de multimedia era casi un requisito. Esto limitaba la compatibilidad, lo que
-                    resultaba problemático. Por eso, en HTML5 se añadió por primera vez soporte multimedia de manera
-                    nativa, lo que resulta en una experiencia más fluida y con mayor compatibilidad en distintos
-                    dispositivos. </li>
-            </ul>
-            <img src="img/HTML_Multimedia.png" alt="Multimedia integrado en HTML5" width="400">
-            <ul>
-                <li>Capacidades Offline y Almacenamiento: Gracias a HTML5, ahora es posible almacenar recursos
-                    importantes (HTML, CSS, JavaScript, imágenes) localmente en el navegador, permitiendo que la
-                    aplicación se cargue y funcione incluso sin conexión.</li>
-            </ul>
-
-            <img src="img/html5-offline.jpg" alt="Capacidad Offline de HTML5" width="300">
-            <ul>
-                <li>Creación de formularios más inteligentes e interactivos: Introduce tipos de entrada como date, time,
-                    email y otros. Además, permite dibujar gráficos 2D y gráficos vectoriales escalables, lo que
-                    facilita la visualización de datos.</li>
-            </ul>
-            <img src="img/HTML_Canvas_API.jpg" alt="API de Canvas en HTML" width="400">
-            <ul><li>Compatibilidad Móvil: Debido a que HTML5 fue concebido en una época en donde los móviles dejan de
-                ser simples aparatos para hacer llamadas y se convertían en pequeñas computadoras con todo tipo de
-                funciones. Por ende, su compatibilidad al tomar acciones como eliminar la necesidad de plugins de
-                terceros o la estandarización de etiquetas ayuda a que los sitios web se vean y funcionen de manera
-                más uniforme en distintos navegadores y dispositivos (escritorio, tabletas y móviles).</li></ul>   
-            <img src="img/HTML_Compatibilidad_Móvil.png" alt="Compatibilidad con dispositivos móviles de HTML5"
-                width="350">
-
-        </article>
-    </main>
-    <footer>
-        <p>© 2025 - UTPL</p>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="img/HTML_Multimedia.png" class="card-img-top">
+                            <div class="card-body">
+                                <h5>Multimedia</h5>
+                                <p>En versiones anteriores de HTML, el uso de plugins de terceros para la
+                                    implementación de multimedia era casi un requisito. Esto limitaba la compatibilidad,
+                                    lo que
+                                    resultaba problemático. Por eso, en HTML5 se añadió por primera vez soporte
+                                    multimedia de manera
+                                    nativa, lo que resulta en una experiencia más fluida y con mayor compatibilidad en
+                                    distintos
+                                    dispositivos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="img/html5-offline.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5>Offline y Almacenamiento</h5>
+                                <p>Gracias a HTML5, ahora es posible almacenar recursos
+                                    importantes (HTML, CSS, JavaScript, imágenes) localmente en el navegador,
+                                    permitiendo que la
+                                    aplicación se cargue y funcione incluso sin conexión.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="img/HTML_Canvas_API.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5>Formularios Interactivos</h5>
+                                <p>Introduce tipos de entrada como date, time,
+                                    email y otros. Además, permite dibujar gráficos 2D y gráficos vectoriales
+                                    escalables, lo que
+                                    facilita la visualización de datos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="img/HTML_Compatibilidad_Móvil.png" class="card-img-top">
+                            <div class="card-body">
+                                <h5>Compatibilidad Móvil</h5>
+                                <p>Debido a que HTML5 fue concebido en una época en donde los móviles dejan de
+                                    ser simples aparatos para hacer llamadas y se convertían en pequeñas computadoras
+                                    con todo tipo de
+                                    funciones. Por ende, su compatibilidad al tomar acciones como eliminar la necesidad
+                                    de plugins de
+                                    terceros o la estandarización de etiquetas ayuda a que los sitios web se vean y
+                                    funcionen de manera
+                                    más uniforme en distintos navegadores y dispositivos (escritorio, tabletas y
+                                    móviles).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="img/HTML5-Rendimiento-Velocidad.png" class="card-img-top">
+                            <div class="card-body">
+                                <h5>Rendimiento y Velocidad</h5>
+                                <p>Optimiza la carga de páginas y reduce el consumo de recursos en dispositivos,
+                                    ofreciendo un funcionamiento más fluido.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        © 2025 - UTPL
     </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
